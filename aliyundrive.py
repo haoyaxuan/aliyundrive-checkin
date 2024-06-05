@@ -122,10 +122,14 @@ class Aliyundrive:
         headers = {
             'User-Agent': 'AliApp(AYSD-PAD/5.8.1) com.alicloud.smartdrive/5.8.1 Version/15.7.9 Channel/201200 Language/zh-Hans-CN /iOS Mobile/iPad5,1',
             'Content-Type': 'application/json; charset=UTF-8',
-            'x-canary': 'client=iOS,app=adrive,version=v5.8.1',
+            'x-timestamp': '1717553224',
+            'X-Canary': 'client=iOS,app=adrive,version=v5.8.1',
             'x-sgext': 'JAcJNSwyr3BzOLCPfsEIVTU8BTgWOAc9AioAPBYqBD4EPgA8BjsEPxY5BTkFOQU5BTkFOQU5BTkFKgUqBSoFORY5BTkFKgUqBSoFKgUqBSoFKgUqBSoFOQU5BQ==',
             'x-device-id': 'ZaSZLA5ygikDAFGWnueqL9N5',
-            'x-timestamp': '1717553224',
+            'x-signature': 'c61673da3922da62b0996bc86a41323d8e58ff2510561ff3c602584cefb434455b87a1b81597467b5fcdab23f86cdff120953d44a4f50d448d003e5aecd0108c00',
+            'x-sign': 'izK9q4002xAAKs17EqYTzYBXII7uCs16z4NXPJezCDp8wd1lnz5+v1qXHFIzb7ldy7ppfq6UnM++cAkenUOJPR9NG9rNes16zdrNes',
+            'x-mini-wua': 'iLwSNmVfBoXnOJI60yHvEShgENZYuW4jgOdRZA4jp9C+SKxa/JXPE57vYS0FZ2YgAIao2ooc/0X/hj9PoQeLqNJK1U2EEG4LNze4Q9TfW992t1ldxFMJkhXNio+IYZq3s3TPJ32kzbDlCvXSqw2kFH/4h',
+            'x-umt': 'G7EB9SRLPFl+3RKP4VdCcGwKQEY+5RtX',
             'x-nonce': '78ED7E60-842C-4767-BFE2-1DDC7044F018',
             'x-signature-v2': '86093af5d9b50e7cf92c6e418bc5acb5dde76160',
             'authorization': f'Bearer {access_token}'
