@@ -92,7 +92,16 @@ class Aliyundrive:
         url = 'https://member.aliyundrive.com/v1/activity/sign_in_list'
         payload = {'isReward': False}
         params = {'_rx-s': 'mobile'}
-        headers = {'Authorization': f'Bearer {access_token}'}
+        headers = {
+            'User-Agent': "AliApp(AYSD-PAD/5.8.1) com.alicloud.smartdrive/5.8.1 Version/15.7.9 Channel/201200 Language/zh-Hans-CN /iOS Mobile/iPad5,1",
+            'Content-Type': "application/json",
+            'x-device-id': "ZaSZLA5ygikDAFGWnueqL9N5",
+            'x-canary': "client=iOS,app=adrive,version=v5.8.1",
+            'x-timestamp': "1717553224",
+            'x-nonce': "78ED7E60-842C-4767-BFE2-1DDC7044F018",
+            'x-signature-v2': "86093af5d9b50e7cf92c6e418bc5acb5dde76160",
+            'authorization': f'Bearer {access_token}'
+        }
 
         response = requests.post(url, json=payload, params=params, headers=headers, timeout=5)
         data = response.json()
@@ -119,7 +128,16 @@ class Aliyundrive:
         url = 'https://member.aliyundrive.com/v1/activity/sign_in_reward'
         payload = {'signInDay': sign_day}
         params = {'_rx-s': 'mobile'}
-        headers = {'Authorization': f'Bearer {access_token}'}
+        headers = {
+            'User-Agent': "AliApp(AYSD-PAD/5.8.1) com.alicloud.smartdrive/5.8.1 Version/15.7.9 Channel/201200 Language/zh-Hans-CN /iOS Mobile/iPad5,1",
+            'Content-Type': "application/json",
+            'x-device-id': "ZaSZLA5ygikDAFGWnueqL9N5",
+            'x-canary': "client=iOS,app=adrive,version=v5.8.1",
+            'x-timestamp': "1717553224",
+            'x-nonce': "78ED7E60-842C-4767-BFE2-1DDC7044F018",
+            'x-signature-v2': "86093af5d9b50e7cf92c6e418bc5acb5dde76160",
+            'authorization': f'Bearer {access_token}'
+        }
 
         response = requests.post(url, json=payload, params=params, headers=headers, timeout=5)
         data = response.json()
@@ -145,7 +163,16 @@ class Aliyundrive:
         url = 'https://member.aliyundrive.com/v2/activity/sign_in_list'
         payload = {}
         params = {'_rx-s': 'mobile'}
-        headers = {'Authorization': f'Bearer {access_token}'}
+        headers = {
+            'User-Agent': "AliApp(AYSD-PAD/5.8.1) com.alicloud.smartdrive/5.8.1 Version/15.7.9 Channel/201200 Language/zh-Hans-CN /iOS Mobile/iPad5,1",
+            'Content-Type': "application/json",
+            'x-device-id': "ZaSZLA5ygikDAFGWnueqL9N5",
+            'x-canary': "client=iOS,app=adrive,version=v5.8.1",
+            'x-timestamp': "1717553224",
+            'x-nonce': "78ED7E60-842C-4767-BFE2-1DDC7044F018",
+            'x-signature-v2': "86093af5d9b50e7cf92c6e418bc5acb5dde76160",
+            'authorization': f'Bearer {access_token}'
+        }
 
         response = requests.post(url, json=payload, params=params, headers=headers, timeout=5)
         data = response.json()
